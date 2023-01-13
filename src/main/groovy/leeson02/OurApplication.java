@@ -10,7 +10,7 @@ import java.io.IOException;
 public class OurApplication {
     public static void main(String[] args) throws IOException, InstantiationException, IllegalAccessException {
         GroovyClassLoader loader = new GroovyClassLoader();
-        Class aClass = loader.parseClass(new File("Main.groovy"));
+        Class aClass = loader.parseClass(new File("RomanNumber.groovy"));
         // ...
         GroovyObject groovyObject = (GroovyObject) aClass.newInstance();
     }
