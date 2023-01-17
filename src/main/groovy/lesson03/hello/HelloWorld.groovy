@@ -9,7 +9,11 @@ class HelloWorld {
         println (firstName + " " + secondName)
     }
 
-    def doSomething(long one, long two) {
+    def doSomething(Map m) {
+        doSomething m*.value
+    }
+
+    def doSomething(int one, int two) {
         firstName = one
         secondName = two
         true

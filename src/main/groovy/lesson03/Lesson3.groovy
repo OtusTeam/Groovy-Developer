@@ -39,7 +39,7 @@ class Lesson4 {
 
         HelloWorld helloWorld = new HelloWorld(firstName: 'Vasya', secondName: 'Vasya')
         helloWorld.hello()
-        println helloWorld.doSomething(two: 1l, one: 2l)
+        println helloWorld.doSomething(one: 1, two: 2)
     }
 }
 
