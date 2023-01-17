@@ -26,6 +26,9 @@ Collections.sort(bookedPlacements, new Comparator<Placement>() {
     }
 });
 
+placements.findAll {it.booked}
+    .sort {o1, o2 -> o2.wPrice<=> o1.wPrice ?: o1.creationDate <=> o2.creationDate}
+
 println placements
 
 

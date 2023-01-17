@@ -5,6 +5,7 @@ def test(String a, String b) {
 }
 def test(Map m) {
     test m*.value
+    //test(["aa", "bb"])
 }
 
 assert test(a: "aa", b:"bb") == "a=aa, b=bb"
