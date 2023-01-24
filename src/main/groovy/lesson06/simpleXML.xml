@@ -1,0 +1,8 @@
+<authors>
+  <author name='test1'>
+    <book title='title1' edition='1' />
+  </author>
+  <author name='test2'>
+    <book title='title2' edition='2' />
+  </author>
+</authors>
