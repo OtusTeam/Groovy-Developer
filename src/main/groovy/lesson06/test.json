@@ -1,0 +1,18 @@
+{
+  "simple": 123,
+  "fraction": 123.66,
+  "exponential": 123e12,
+  "address": {
+    "streetAddress": "5151 E Broadway Blvd",
+    "city": "Tucson",
+    "state": "AZ",
+    "company": {
+      "name": "VMS",
+      "employees": "1000",
+      "phoneNumbers": [
+        "(520)202-3100",
+        "(520)202-3175"
+      ]
+    }
+  }
+}
