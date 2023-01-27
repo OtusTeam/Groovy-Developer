@@ -1,5 +1,6 @@
 package lesson07.hw.sessionmanager
 
+import groovy.sql.Sql
 import lesson07.hw.exception.DataBaseOperationException
 
 import javax.sql.DataSource
@@ -7,9 +8,11 @@ import java.util.concurrent.Callable
 
 class TransactionRunnerJdbc implements TransactionRunner {
     private final DataSource dataSource;
+    private final Sql connection;
 
     TransactionRunnerJdbc(DataSource dataSource) {
         this.dataSource = dataSource;
+        this.connection = new Sql(dataSource)
     }
 
     @Override

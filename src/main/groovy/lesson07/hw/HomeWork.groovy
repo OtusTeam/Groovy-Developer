@@ -70,7 +70,7 @@ def managerAfterUpdate = dbServiceManager.saveManager(managerForUpdate);
 log.info(">>>Last manager after update::{}", managerAfterUpdate);
 
 private static void flywayMigrations(DataSource dataSource) {
-    def logger = LoggerFactory.getLogger(HomeWork.class)
+    def logger = getLogger(HomeWork.class)
     logger.info("db migration started...");
     def flyway = Flyway.configure()
             .dataSource(dataSource)

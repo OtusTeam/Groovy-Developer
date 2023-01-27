@@ -3,7 +3,7 @@ package lesson07.hw.mapper;
 /**
  * Создает SQL - запросы
  */
-public interface EntitySQLMetaData {
+interface EntitySQLMetaData {
     String getSelectAllSql()
 
     String getSelectByIdSql()
