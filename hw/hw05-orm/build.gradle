@@ -1,0 +1,25 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'ru.otus'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy-all:4.0.7'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation 'org.flywaydb:flyway-core:9.12.0'
+    implementation 'org.postgresql:postgresql:42.5.1'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+}
+
+test {
+    useJUnitPlatform()
+}
