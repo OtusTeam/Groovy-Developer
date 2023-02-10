@@ -1,0 +1,12 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee">
+    <servlet>
+        <servlet-name>Groovy</servlet-name>
+        <servlet-class>groovy.servlet.GroovyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet>Groovy</servlet>
+        <url-pattern>/example</url-pattern>
+    </servlet-mapping>
+
+</web-app>

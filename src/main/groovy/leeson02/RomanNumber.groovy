@@ -32,7 +32,7 @@ class RomanNumber {
     }
 
     static void main(String[] args) {
-       def romanNumber = new RomanNumber('I')
+        def romanNumber = new RomanNumber('I')
         def romanNumber2 = new RomanNumber('II')
         romanNumber++
         romanNumber = romanNumber + romanNumber2
