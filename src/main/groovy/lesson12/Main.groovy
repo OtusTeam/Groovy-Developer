@@ -21,7 +21,7 @@ new Foo().doSomething()
 @ToString(cache = true, includeFields = true)
 class FooBuilder {
   Foo foo1 = Foo(bar: "hello")
-  Foo foo2= Foo(bar: "hello")
+  Foo foo2 = Foo(bar: "hello")
   Foo foo3 = Foo(bar: "hello2")
 }
 
