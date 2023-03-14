@@ -20,6 +20,8 @@ dependencies {
     implementation 'org.flywaydb:flyway-core:9.12.0'
     implementation 'org.postgresql:postgresql:42.5.1'
     implementation 'com.zaxxer:HikariCP:5.0.1'
+
+    testImplementation "com.lesfurets:jenkins-pipeline-unit:1.9"
 }
 
 test {
