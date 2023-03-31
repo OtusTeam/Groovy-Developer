@@ -25,18 +25,14 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TasksDto'
+
     post:
       tags: [ task ]
       operationId: getTasks
       security:
         - BearerAuth: [ ]
       requestBody:
-        description: task
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/TasksDto'
+        $ref: '#/components/schemas/TasksDto'
       responses:
         '200':
           description: Done
