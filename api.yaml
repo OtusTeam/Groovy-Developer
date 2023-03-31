@@ -25,44 +25,44 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TasksDto'
-    post:
-      tags: [ task ]
-      operationId: getTasks
-      security:
-        - BearerAuth: [ ]
-      requestBody:
-        $ref: '#/components/schemas/TasksDto'
-      responses:
-        '200':
-          description: Done
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TasksDto'
-    delete:
-      tags: [ task ]
-      operationId: deleteTask
-      security:
-        - BearerAuth: [ ]
-      parameters:
-        - name: taskId
-          in: query
-          description: Task id
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Done
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TasksDto'
+#    post:
+#      tags: [ task ]
+#      operationId: getTasks
+#      security:
+#        - BearerAuth: [ ]
+#      requestBody:
+#        $ref: '#/components/schemas/TasksDto'
+#      responses:
+#        '200':
+#          description: Done
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#/components/schemas/TasksDto'
+#    delete:
+#      tags: [ task ]
+#      operationId: deleteTask
+#      security:
+#        - BearerAuth: [ ]
+#      parameters:
+#        - name: taskId
+#          in: query
+#          description: Task id
+#          schema:
+#            type: string
+#      responses:
+#        '200':
+#          description: Done
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#/components/schemas/TasksDto'
 components:
   schemas:
     TasksDto:
       type: object
       properties:
-          id:
-            type: string
-          name:
-            type: string
+        id:
+          type: string
+        name:
+          type: string
