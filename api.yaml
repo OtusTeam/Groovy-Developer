@@ -10,8 +10,6 @@ paths:
     get:
       tags: [ task ]
       operationId: getTasks
-      security:
-        - BearerAuth: [ ]
       parameters:
         - name: taskName
           in: query
@@ -28,10 +26,11 @@ paths:
     post:
       tags: [ task ]
       operationId: getTasks
-      security:
-        - BearerAuth: [ ]
       requestBody:
-        $ref: '#/components/schemas/TasksDto'
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TasksDto'
       responses:
         '200':
           description: Done
@@ -42,8 +41,6 @@ paths:
     delete:
       tags: [ task ]
       operationId: deleteTask
-      security:
-        - BearerAuth: [ ]
       parameters:
         - name: taskId
           in: query
