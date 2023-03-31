@@ -1,0 +1,74 @@
+# API-first development with OpenAPI
+openapi: '3.0.3'
+info:
+  title: 'TODO list'
+  version: 0.0.1
+servers:
+  - url: ''
+paths:
+  /api/task:
+    get:
+      tags: [ task ]
+      operationId: getTasks
+      security:
+        - BearerAuth: [ ]
+      parameters:
+        - name: taskName
+          in: query
+          description: Task name filter
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Done
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TasksDto'
+    post:
+      tags: [ task ]
+      operationId: getTasks
+      security:
+        - BearerAuth: [ ]
+      requestBody:
+        description: task
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TasksDto'
+      responses:
+        '200':
+          description: Done
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TasksDto'
+    delete:
+      tags: [ task ]
+      operationId: deleteTask
+      security:
+        - BearerAuth: [ ]
+      parameters:
+        - name: taskId
+          in: query
+          description: Task id
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Done
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TasksDto'
+
+components:
+  schemas:
+    TasksDto:
+      type: object
+      properties:
+          id:
+            type: string
+          name:
+            type: string
