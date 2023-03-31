@@ -25,7 +25,7 @@ paths:
                 $ref: '#/components/schemas/TasksDto'
     post:
       tags: [ task ]
-      operationId: getTasks
+      operationId: addTask
       requestBody:
         content:
           application/json:
