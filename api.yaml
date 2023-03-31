@@ -21,10 +21,10 @@ paths:
       responses:
         '200':
           description: Done
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/TasksDto'
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#/components/schemas/TasksDto'
 #    post:
 #      tags: [ task ]
 #      operationId: getTasks
@@ -57,12 +57,12 @@ paths:
 #            application/json:
 #              schema:
 #                $ref: '#/components/schemas/TasksDto'
-components:
-  schemas:
-    TasksDto:
-      type: object
-      properties:
-        id:
-          type: string
-        name:
-          type: string
+#components:
+#  schemas:
+#    TasksDto:
+#      type: object
+#      properties:
+#        id:
+#          type: string
+#        name:
+#          type: string
